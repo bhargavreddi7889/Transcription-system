@@ -1,10 +1,9 @@
 services:
   - type: web
     name: transcription-backend
-    env: python
+    env: python  # THIS LINE IS CRITICAL
     runtime: python-3.10.13
     plan: free
-    region: oregon
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
